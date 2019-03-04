@@ -1,14 +1,17 @@
-'''
-学生类
 
-'''
-class Student():
-    name=None
-    age=19
-    def dohomework(self):
-        print("在做作业")
+class Person():
+    name="ly"
+    age=18
 
-mingyue=Student()
-print(mingyue.age)
-mingyue.dohomework()
-print(mingyue)
+    def __init__(self):
+
+        self.name="zs"
+        self.age=18
+    def do(self):
+        #print("%s是%d岁"%(self.name,self.age))
+        print(self.name)
+p=Person()
+p.do()
+Person.do(p)
+Person.do(Person)
+
